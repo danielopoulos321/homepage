@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Quicksand&display=swap');
+body {
+    margin: 0;
+}
+
+p{
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Hedvig Letters Serif', serif;
+}
+
+header{
+    position: relative;
+    padding: 4em;
+    display: flex;
+}
+
+.hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-background{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    transform: skewY(-0.2rad) translateY(-160px);
+    background-color: #0A91B2;
+    box-shadow: 13px 0px 50px -14px rgba(66, 68, 90, 1);
+}
+
+.hero > img{
+    max-width: 450px;
+    box-shadow: 13px 0px 50px -14px rgba(66, 68, 90, 1);
+}
+
+.hero > h1 {
+    margin: 0;
+    position: absolute;
+    font-size: 2.5em;
+    color: #ffffff;
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 1);
+    bottom: 5%;
+}
+
+.about-me{
+    background-color: #ffffff;
+    padding: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    box-shadow: 13px 0px 50px -14px rgba(66, 68, 90, 1);
+}
