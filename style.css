@@ -80,11 +80,24 @@ footer {
 }
 
 .about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #ffffff;
     padding: 1em;
     margin-top: 3em;
     margin-bottom: 3em;
     box-shadow: 13px 0px 50px -14px rgba(66, 68, 90, 1);
+}
+
+.about-me>.contact-svg{
+    align-self: flex-end;
+}
+
+.about-me>.contact-svg>svg{
+    width: 2.5em;
+    padding-left: 2em;
+    padding-right: 0;
 }
 
 main>h2{
@@ -154,7 +167,7 @@ address>h2{
     margin-bottom: .5em;
 }
 
-.address-svg>svg{
+.contact-svg>svg{
     width: 3em;
     padding-right: 3em;
     padding-top: 2em;
