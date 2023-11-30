@@ -8,6 +8,12 @@ body {
     max-width: 1440px;
 }
 
+a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: inherit;
+}
+
 
 p{
     margin: 0;
@@ -32,8 +38,9 @@ main {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 2em 4em;
+    padding: 4em;
     background-color: #0A91B2;
 }
 
@@ -129,4 +136,37 @@ main>h2{
     width: 1.5em;
     padding-left: .5em;
     padding-right: .5em;
+}
+
+footer>img{
+    max-width: 600px;
+}
+
+address{
+    font-style: normal;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+address>h2{
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.address-svg>svg{
+    width: 3em;
+    padding-right: 3em;
+    padding-top: 2em;
+}
+
+.contact-element{
+    display: flex;
+    align-items: center;
+}
+
+.contact-element>svg{
+    width: 2em;
+    fill: #ffffff;
+    padding-right: 1em;
 }
