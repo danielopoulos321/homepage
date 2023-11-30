@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Quicksand&display=swap');
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
 }
 
+
 p{
-    font-size: 1.2em;
+    margin: 0;
+    font-size: 1.1em;
     font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2, h3 {
     font-family: 'Hedvig Letters Serif', serif;
+    margin: 0;
 }
 
 header{
@@ -23,6 +31,8 @@ main {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
     padding: 2em 4em;
     background-color: #0A91B2;
 }
@@ -70,12 +80,53 @@ footer {
     box-shadow: 13px 0px 50px -14px rgba(66, 68, 90, 1);
 }
 
+main>h2{
+    margin-bottom: .25em;
+    font-size: 1.85em;
+}
+
 .project-container{
     display: grid;
-    gap: 1em;
+    gap: 2em;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 }
 
 .project{
-    background-color: cadetblue;
+    background-color: #ffffff;
+    box-shadow: 5px 6px 12px 0px rgba(0,0,0,0.5);
+}
+
+.project>img{
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-info{
+    padding: .5em 1em;
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-info>p{
+    margin-top: .5em;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.project-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-svg{
+    display: flex;
+    align-items: center;
+}
+
+.project-svg>svg{
+    width: 1.5em;
+    padding-left: .5em;
+    padding-right: .5em;
 }
