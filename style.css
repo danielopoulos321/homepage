@@ -108,7 +108,8 @@ footer {
     align-self: flex-end;
 }
 
-.about-me>.contact-svg>svg{
+
+.about-me>.contact-svg>a{
     width: 2.5em;
     padding-left: 2em;
     padding-right: 0;
