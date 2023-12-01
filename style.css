@@ -166,8 +166,11 @@ main>h2{
     padding-right: .5em;
 }
 
-footer>img{
+footer > picture>img,
+footer > picture>source
+{
     max-width: 600px;
+    box-shadow: var(--shadow);
 }
 
 address{
@@ -175,6 +178,7 @@ address{
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    padding-right: 1em;
 }
 
 address>h2{
@@ -207,6 +211,15 @@ address>h2{
     .project-container{
         gap: 2em;
         grid-template-columns: 1fr 1fr;
+    }
+
+    footer{
+        padding: 1em;
+    }
+    footer > picture>img,
+    footer > picture>source
+    {
+        max-width: 100%;
     }
 }
 
@@ -268,6 +281,9 @@ address>h2{
         gap: 2em;
         grid-template-columns: 1fr;
     }
+    address{
+        padding: 2em;
+    }
     address>h2{
         align-self: center;
     }
@@ -278,4 +294,12 @@ address>h2{
     address>.contact-svg>svg{
         padding: 0;
     }
-}
+    footer{
+        padding: 0;
+    }
+    footer > picture>img,
+    footer > picture>source
+    {
+       max-width: 100%;
+    }
+    }
