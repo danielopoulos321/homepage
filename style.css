@@ -74,8 +74,7 @@ footer {
     display: flex;
 }
 
-.hero > picture>img,
-.hero > picture>source
+.photo
 {
     max-width: 450px;
     box-shadow: var(--shadow);
@@ -207,12 +206,50 @@ address>h2{
     padding-right: 1em;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) and (min-width:601px){
+    header{
+        display: block;
+        padding: 8em;
+        padding-bottom: 2em;
+    }
+    .hero-container{
+        display: block;
+        background-color: #ffffff;
+        padding: 2em;
+        box-shadow: var(--shadow);
+    }
+    .hero{
+        position: relative;
+        float: left;
+        margin-right: 2em;
+        margin-top: -100px;
+        margin-left: -75px;
+        width: 50%;
+        min-width: 20px;
+    }
+    .hero>h1{
+        position: absolute;
+        top: 1%;
+        transform: translateX(80%);
+        text-align: center;
+    }
+    .photo{
+        width: 100%;
+        object-fit: cover;
+    }
+    .about-me{
+        display: inline;
+        box-shadow: none;
+        background-color: transparent;
+    }    
+    .contact-svg{
+        width: 100%;
+        justify-content: center;
+    }
     .project-container{
         gap: 2em;
         grid-template-columns: 1fr 1fr;
     }
-
     footer{
         padding: 1em;
     }
